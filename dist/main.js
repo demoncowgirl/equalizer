@@ -3,11 +3,9 @@ var ctx = c.getContext('2d');
 
 // image getElement
 var img = document.createElement('IMG');
-// draw image onload
-img.onload=draw;
 
-// draw rectangle mask
-function draw() {
+// draw image onload
+img.onload = function() {
 
       // saves state so clipping can be undone
       ctx.save();
@@ -19,21 +17,12 @@ function draw() {
       // clip to the current path
       ctx.clip();
 
-      ctx.drawImage(img);
+      ctx.drawImage(img, 0, 0);
 
       // undo clipping
       ctx.restore();
-}
-
-function animate(){
-  for(var x=0; x < 1630; x++;)
-  ctx.drawImage(img, x, 0);
-  }
-
-  requestAnimationFrame(animate);
 
 }
-
 
 //image source
 img.src = "../images/equalizer-vector.png";

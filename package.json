@@ -1,0 +1,28 @@
+{
+  "name": "equalizer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Beth J Salvatore",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demoncowgirl/equalizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/demoncowgirl/equalizer/issues"
+  },
+  "homepage": "https://github.com/demoncowgirl/equalizer#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "run-sequence": "^2.2.1",
+    "sass": "^1.20.1"
+  }
+}
